@@ -8,16 +8,17 @@ function init() {
 let apiData = []
 apiCall().then(async (res) => {apiData = await res; console.log("api data is : "+JSON.stringify(apiData));});
 }
-init();
+// init();
 let prom = new Promise((resolve, reject) => {
-    resolve("Hi"),
-    reject(err => console.error("Error"))
+    setTimeout(() => {
+        resolve("Hi"),
+    reject(new Error('error occurred')) }, 5000)
 })
 
-prom.then(u => console.log(u)).catch(e => console.log(e));
+prom.then(u => console.log(u)).catch(e => console.error(e));
 
 
-setTimeout(() => console.log("Hi"), 5000)
+// setTimeout(() => console.log("Hi"), 5000)
 
 
 
