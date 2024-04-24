@@ -6,12 +6,21 @@ const axios = require('axios')
 const b = require('./B');
 
 // axios.get('').then(p => console.log(p.data))
+
 let bb = new b();
+
 bb.returnName('HALO');
+
 let clas = new class1();
+
 let c = new claz.Callee();
+
 console.log(c.subtract(3, 2));
+
 console.log(claz.add(1, 2))
+
 console.log(clas.sayHi('Tharun'));
+
 console.log(sayhello('Tharun'));
+
 console.log(sayhi("Tharun"));
