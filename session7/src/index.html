@@ -1,0 +1,18 @@
+<html>
+    <head>
+        </head>
+        <body>
+            <div id="divid">Hi</div>
+            <script>
+                console.log(10)
+setTimeout(() => console.log(3), 1000);
+setTimeout(() => console.log(4), 500);
+setTimeout(() => console.log(5), 600);
+let prom = new Promise((resolve) => resolve('hi'));
+
+prom.then(p => console.log(p));
+console.log(2);
+console.log(document.getElementById('divid').innerText)
+                </script>
+        </body>
+</html>
