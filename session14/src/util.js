@@ -1,5 +1,3 @@
-module.exports.func2 = (...args) => {return args};
-
-// exports.func2 = (...args) => {return args};
-
-
+export default function() {
+    console.log('Hello from myModule!');
+  } 
